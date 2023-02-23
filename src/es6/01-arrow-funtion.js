@@ -73,3 +73,56 @@ function newuser(user,age,country,uid) {
 
 console.log(newuser("manuel",18,"col",1));
 
+
+//promesas
+
+const anotherFuntion = () => {
+  return new Promise((resolve, reject) => {
+    if (true) {
+      resolve("hey!!")
+    } else {
+      reject("whooops");
+    }
+  })
+}
+
+anotherFuntion()
+  .then(Response => console.log(Response))
+  .catch(err => console.log(err));
+
+
+  //clases
+
+  class User {};
+
+  const newUser = new User();
+
+
+  class user1 {
+    greeting(){
+      return "hello";
+    }
+  };
+
+  const mnts = new user1();
+  console.log((mnts.greeting()));
+  const bebeloper = new user1()
+  console.log(bebeloper.greeting());
+
+  // constructor
+
+  class user2 {
+    //constructor
+    constructor(){
+      console.log("nuevo usuario");
+    }
+    greeting(){
+      return "hola"
+    }
+  }
+
+
+  const david = new user2();
+
+
+
